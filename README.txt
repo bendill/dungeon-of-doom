@@ -52,7 +52,7 @@ Players cannot be placed on walls or on gold.
 My code is split into 5 classes:
 
 Game - Coordinates the game itself, and carries out the commands using calls to other class 
-       methods. In each turn, it gets the player's commmand, decodes it and selects the 
+       methods. In each turn, it gets the player's command, decodes it and selects the
        appropriate method to carry out the command. If it's the human player's turn, it then 
        prints the result of this command.
 
@@ -64,7 +64,7 @@ Player - A abstract class which acts as a general player. It includes an abstrac
 	 'getCommand()' which is implemented differently in both its subclasses. It keeps 
 	 track of its coordinates on the map.
 
-HumanPlayer - A subclass of Player which also stores a quanitity of gold, and implements
+HumanPlayer - A subclass of Player which also stores a quantity of gold, and implements
 	      'getCommand()' to get console input from the player using BufferedReader.
 
 BotPlayer - Also a subclass of Player which implements 'getCommand()' using an algorithm. 
